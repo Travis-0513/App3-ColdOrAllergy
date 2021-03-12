@@ -39,11 +39,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
       var allergy_count = 0;
       var cold_count = 0; 
-
-	
-	var coldPercent = ((cold_count/(cold_count + allergy_count)*100)
-	var allergyPercent = ((allergy_count/(allergy_count + cold_count)*100)
-	
 	
 	function allergyAdd(){
             allergy_count = allergy_count + 1;
@@ -54,13 +49,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 
-	function resultsCalculator(){
+	function resultscalculator(){
 		
 		var resultText = document.getElementById("resultspage");
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + <br> Probability it is a cold =" + coldPercent" + "%";
+		var coldPercent = (cold_count/(cold_count + allergy_count)*100;
+		var allergyPercent = (allergy_count/(allergy_count + cold_count)*100;
+		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + <br> Probability it is a cold =" + coldPercent + "%";
 	}
 	
-	<a onclick = "resultsCalculator();" "class="w3-btn w3-black"> show resultsCalculator </a>
+	<a onclick = "resultsCalculator();" "class="w3-btn w3-black"> show resultscalculator </a>
 	
   </script>
 
@@ -238,11 +235,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		</div>
 	
-	<div id="results" class="w3-container">
+	<div id="content" class="w3-container">
 		
 		<p id="results"></p>
 		
-		<a onclick="resultsCalculator();" class="w3-btn w3-black"> Results Here </a>
+		<a onclick="resultscalculator();" class="w3-btn w3-black"> Results Here </a>
 		
 		<a href="#content" class="w3-btn w3-grey w3-round"> Restart Survey </a>
 		
