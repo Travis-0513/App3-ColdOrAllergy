@@ -49,7 +49,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 
-	function results(){
+	function resultsCalculator(){
 		
 		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
@@ -238,7 +238,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		<p id="results"></p>
 		
-		<a onclick="results();" class="w3-btn w3-black"> Results Here </a>
+		<a onclick="resultsCalculator();" class="w3-btn w3-black"> Results Here </a>
 		
 		<a href="#content" class="w3-btn w3-grey w3-round"> Restart Survey </a>
 		
