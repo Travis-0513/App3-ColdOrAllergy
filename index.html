@@ -52,9 +52,9 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function resultscalculator(){
 		
 		var resultText = document.getElementById("resultspage");
-		var coldPercent = (cold_count/(cold_count + allergy_count)*100;
-		var allergyPercent = (allergy_count/(allergy_count + cold_count)*100;
-		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + <br> Probability it is a cold =" + coldPercent + "%";
+		var coldPercent = (cold_count / (cold_count + allergy_count))*100;
+		var allergyPercent = (allergy_count / (allergy_count + cold_count))*100;
+		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "%" + "<br> Probability it is a cold =" + coldPercent + "%";
 	}
 	
 	<a onclick = "resultsCalculator();" "class="w3-btn w3-black"> show resultscalculator </a>
@@ -239,9 +239,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 		<p id="results"></p>
 		
-		<a onclick="resultscalculator();" class="w3-btn w3-black"> Results Here </a>
-		
-		<a href="#content" class="w3-btn w3-grey w3-round"> Restart Survey </a>
+		<a onclick="resultscalculator();" class="w3-btn w3-grey w3-round"> Results Here </a>
 		
 		</div><!-- /content -->
 	<div>
