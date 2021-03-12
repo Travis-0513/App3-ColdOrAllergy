@@ -37,7 +37,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-        function allergyAdd(){
+      var allergy_count = 0;
+      var cold_count = 0; 
+
+	
+	var coldPercent = (cold_count/allergy_count)*100
+	var allergyPercent = (allergy_count/cold_count)*100
+	
+	
+	function allergyAdd(){
             allergy_count = allergy_count + 1;
 
         }
@@ -48,7 +56,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	function resultsCalculator(){
 		
-		var resultText = document.getElementById("resultsCalculator");
+		var resultText = document.getElementById("results");
 		resultText.innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold =" + coldPercent;
 	}
 	
